@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Simple Calculator</title>
+  <link rel="stylesheet" href="stylesheet.css"/>
+</head>
+<body>
+  <div class="calculator">
+    <h1><u>Simple Calculator - Operators & Functions</u></h1><br>
+    <h2>Field 1</h2>
+    <input type="number" id="num1" placeholder="Enter Value"/>
+    <h2> Field 2</h2>
+    <input type="number" id="num2" placeholder="Enter Value"/>
+
+    <br>
+
+    <div class="buttons">
+  <button onclick="calculate('add')">Add (+)</button>
+  <button onclick="calculate('subtract')">Subtract (-)</button>
+  <button onclick="calculate('multiply')">Multiply (×)</button>
+  <button onclick="calculate('divide')">Divide (÷)</button>
+  <button onclick="calculate('square')">Square (x²)</button>
+  <button onclick="calculate('cube')">Cube (x³)</button>
+    </div>
+
+<div class="clear-button">
+  <button onclick="clearFields()">Clear</button>
+</div><br>
+
+    <div class="result" id="result">Result: </div> <br><hr><br>
+
+    <div class="reference-box">
+  <h2><strong><u>NOTE:</u></strong></h2>
+  <ul>
+    <li><strong>Add:</strong> Field 1 + Field 2</li>
+    <li><strong>Subtract:</strong> Field 1 - Field 2</li>
+    <li><strong>Multiply:</strong> Field 1 × Field 2</li>
+    <li><strong>Divide:</strong> Field 1 ÷ Field 2</li>
+    <li><strong>Square:</strong> Field 1²</li>
+    <li><strong>Cube:</strong> Field 1³</li>
+  </ul>
+</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
